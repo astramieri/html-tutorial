@@ -6,3 +6,19 @@ body {
   background-color: #333;
   color: whitesmoke;
 }
+
+a {
+	color: aliceblue;
+}
+
+a:visited {
+	color: aquamarine;
+}
+
+a:hover, a:active {
+	color: orange;
+}
+
+p {
+	margin: 0px;
+}

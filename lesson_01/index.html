@@ -6,41 +6,68 @@
     <meta name="author" content="Angelo Stramieri" />
     <meta name="description" content="Here the description" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="credit_card.png" type="image/x-icon" />
+    <link rel="icon" href="images/credit_card.png" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" type="text/css" />
   </head>
+
   <body>
     <h1>H1: This is the main topic</h1>
 
     <hr />
+    <nav>
+      <ul>
+        <li><a href="#section1">Section 1</a></li>
+        <li><a href="#section2">Section 2</a></li>
+      </ul>
+    </nav>
+    <hr />
 
     <h2>H2: This is the main sub-topic</h2>
 
-	<!-- inline level element -->
-    <p>Example of an <strong> inline level element</strong></p>
-    <p>Example of <em>inline level element </em></p>
-    <p>Just some text <abbr title="For Your Information">FYI</abbr></p>
+    <section id="section1">
+      <h3>Section 1</h3>
+      <!-- inline level element -->
+      <p>Example of an <strong> inline level element</strong></p>
+      <p>Example of <em>inline level element </em></p>
+      <p>Just some text <abbr title="For Your Information">FYI</abbr></p>
+      <p>
+        Added an anchor tag
+        <a href="https://developer.mozilla.org/">Mozilla Developer Network</a>
+      </p>
+    </section>
 
-	<p>An example of an <strong>ordered list</strong>:</p>
-	<ol>
-		<li>The first letter is A</li>
-		<li>The second letter is B</li>
-		<li>The third letter is C</li>
-	</ol>
-	<p>An example of an <strong>unordered list</strong>:</p>
-	<ul>
-		<li>First element</li>
-		<li>Second element</li>
-		<li>Third elemenet</li>
-	</ul>
+    <section id="section2">
+      <h3>Section 2</h3>
+      <p>An example of an <strong>ordered list</strong>:</p>
+      <ol>
+        <li>The first letter is A</li>
+        <li>The second letter is B</li>
+        <li>The third letter is C</li>
+      </ol>
+      <p>An example of an <strong>unordered list</strong>:</p>
+      <ul>
+        <li>First element</li>
+        <li>Second element</li>
+        <li>Third elemenet</li>
+      </ul>
+      <p>An example of a <strong>description list</strong>:</p>
+      <dl>
+        <dt>This a <em>Description Term</em></dt>
+        <dd>This a <em>Description Detail</em></dd>
+      </dl>
+    </section>
 
-	<p>An example of a <strong>description list</strong>:</p>
-	<dl>
-		<dt>This a <em>Description Term</em></dt>
-		<dd>This a <em>Description Detail</em></dd>
-	</dl>
+    <p>
+      Download favicon
+      <a href="images/test_tube.png" download="">test_tube.png</a>
+    </p>
 
+    <p>Contact me at <a href="mailto:aaa.bbb@ccc">aaa.bbb@cccc</a></p>
+
+    <p>Open <a href="about.html" target="_blank">About Page</a> in a new tab</p>
     <!-- html entities -->
-    2023 &copy; Jack Sparrow
+    2023 &copy; <a href="about.html">Jack Sparrow</a>
+
+    <p><a href="#">Back to Top</a></p>
   </body>
 </html>
