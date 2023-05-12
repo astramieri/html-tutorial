@@ -11,83 +11,111 @@
   </head>
 
   <body>
-    <h1>H1: This is the main topic</h1>
+    <!-- Heading: semantic elements -->
+    <header>
+      <h1>H1: This is the main topic</h1>
+      <h2>H2: This is a sub-topic</h2>
+      <h3>H3: This is a sub-sub-topi</h3>
+      <h6>H4: This is wrong: ideally no more than 3 heading in a page!</h6>
 
-    <hr />
-    <nav>
-      <ul>
-        <li><a href="#section1">Section 1</a></li>
-        <li><a href="#section2">Section 2</a></li>
-      </ul>
-    </nav>
-    <hr />
+      <hr />
 
-    <h2>H2: This is the main sub-topic</h2>
+      <!-- NAV: semantic element -->
 
-    <section id="section1">
-      <h3>Section 1</h3>
-      <figure>
-        <img
-          src="images/colosseum.webp"
-          alt="Colosseum"
-          title="Colosseum in all its beauty"
-          width="400"
-          height="274"
-        />
-        <figcaption>(figcaption) The Wonderful Colosseum</figcaption>
-      </figure>
-      <!-- inline level element -->
-      <p>Example of an <strong> inline level element</strong></p>
-      <p>Example of <em>inline level element </em></p>
-      <p>Just some text <abbr title="For Your Information">FYI</abbr></p>
+      <nav aria-label="primary-navigation">
+        <ul>
+          <li><a href="#section1">Section 1</a></li>
+          <li><a href="#section2">Section 2</a></li>
+        </ul>
+      </nav>
+
+      <aside>
+        <details>
+          <summary>When do you go to sleep in the <mark>nigth</mark>?</summary>
+          <p>Usally at <time datetime="23:00">11 pm</time></p>
+        </details>
+      </aside>
+    </header>
+
+    <main>
+      <hr />
+
+      <h2>H2: This is the main sub-topic</h2>
+
+      <!-- SECTION: semantic element -->
+      <article id="section1">
+        <h3>Section 1</h3>
+        <figure>
+          <img
+            src="images/colosseum.webp"
+            alt="Colosseum"
+            title="Colosseum in all its beauty"
+            width="400"
+            height="274"
+          />
+          <figcaption>(figcaption) The Wonderful Colosseum</figcaption>
+        </figure>
+        <!-- inline level element -->
+        <section>
+          <p>Example of an <strong> inline level element</strong></p>
+          <p>Example of <em>inline level element </em></p>
+          <p>Just some text <abbr title="For Your Information">FYI</abbr></p>
+          <p>
+            Added an anchor tag
+            <a href="https://developer.mozilla.org/"
+              >Mozilla Developer Network</a
+            >
+          </p>
+        </section>
+      </article>
+
+      <article id="section2">
+        <h3>Section 2</h3>
+        <p>An example of an <strong>ordered list</strong>:</p>
+        <ol>
+          <li>The first letter is A</li>
+          <li>The second letter is B</li>
+          <li>The third letter is C</li>
+        </ol>
+        <p>An example of an <strong>unordered list</strong>:</p>
+        <ul>
+          <li>First element</li>
+          <li>Second element</li>
+          <li>Third elemenet</li>
+        </ul>
+        <p>An example of a <strong>description list</strong>:</p>
+        <dl>
+          <dt>This a <em>Description Term</em></dt>
+          <dd>This a <em>Description Detail</em></dd>
+        </dl>
+        <figure>
+          <img
+            src="images/cathedral.webp"
+            alt="Seville Cathedral"
+            title="Seville Cathedral in all its beauty"
+            width="600"
+            height="337"
+            loading="lazy"
+          />
+        </figure>
+      </article>
+    </main>
+
+    <footer>
       <p>
-        Added an anchor tag
-        <a href="https://developer.mozilla.org/">Mozilla Developer Network</a>
+        Download favicon
+        <a href="images/test_tube.png" download="">test_tube.png</a>
       </p>
-    </section>
 
-    <section id="section2">
-      <h3>Section 2</h3>
-      <p>An example of an <strong>ordered list</strong>:</p>
-      <ol>
-        <li>The first letter is A</li>
-        <li>The second letter is B</li>
-        <li>The third letter is C</li>
-      </ol>
-      <p>An example of an <strong>unordered list</strong>:</p>
-      <ul>
-        <li>First element</li>
-        <li>Second element</li>
-        <li>Third elemenet</li>
-      </ul>
-      <p>An example of a <strong>description list</strong>:</p>
-      <dl>
-        <dt>This a <em>Description Term</em></dt>
-        <dd>This a <em>Description Detail</em></dd>
-      </dl>
-      <figure>
-        <img
-          src="images/cathedral.webp"
-          alt="Seville Cathedral"
-          title="Seville Cathedral in all its beauty"
-          width="600"
-          height="337"
-          loading="lazy"
-        />
-      </figure>
-    </section>
+      <p>Contact me at <a href="mailto:aaa.bbb@ccc">aaa.bbb@cccc</a></p>
 
-    <p>
-      Download favicon
-      <a href="images/test_tube.png" download="">test_tube.png</a>
-    </p>
+      <p>
+        Open <a href="about.html" target="_blank">About Page</a> in a new tab
+      </p>
+      <!-- html entities -->
+      <p>2023 &copy; <a href="about.html">Jack Sparrow</a></p>
 
-    <p>Contact me at <a href="mailto:aaa.bbb@ccc">aaa.bbb@cccc</a></p>
-
-    <p>Open <a href="about.html" target="_blank">About Page</a> in a new tab</p>
-    <!-- html entities -->
-    2023 &copy; <a href="about.html">Jack Sparrow</a>
-
-    <p><a href="#">Back to Top</a></p>
+      <p><a href="#">Back to Top</a></p>
+    </footer>
   </body>
 </html>
