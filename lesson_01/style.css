@@ -22,3 +22,10 @@ a:hover, a:active {
 p {
 	margin: 0px;
 }
+
+table, tt, th, td, caption {
+	border: 1px solid #eee;
+	font-family: 'Courier New', Courier, monospace;
+	border-collapse: collapse;
+	padding: 0.55rem;
+}
